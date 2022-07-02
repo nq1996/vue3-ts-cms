@@ -1,24 +1,8 @@
-# vue3-ts-cms
+# git 提交验证
 
-## Project setup
-```
-yarn install
-```
+自动配置命令
+npx husky -init && npm install
+会生成一个.husky 文件夹,在 pre-commit 里面输入 npm run lint 就可以
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+提交信息的规范化
+npm install commitizen -D
