@@ -4,6 +4,7 @@ module.exports = {
     node: true
   },
   extends: [
+    // 继承的一些扩展，若有相同的则后面的覆盖前面的
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/typescript/recommended',
@@ -18,6 +19,9 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    'prettier/prettier': 'off'
+    'prettier/prettier': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
   }
 }
